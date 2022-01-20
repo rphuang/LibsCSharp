@@ -7,15 +7,15 @@ namespace ExifMetadata
     /// <summary>
     /// factory class uses MetadataExtractor to get metadata
     /// </summary>
-    public class ExtractorMetadata
+    public class MetadataExtractorProvider
     {
         /// <summary>
         /// sample usage code to extract EXIF metadata from a file and create Metadata object
         /// </summary>
         public static Metadata GetMetadata(string filePath)
         {
-            ExtractorMetadata extractor = new ExtractorMetadata();
-            extractor.AddMap(ExtractorMetadata.StandardTagMapDefs);
+            MetadataExtractorProvider extractor = new MetadataExtractorProvider();
+            extractor.AddMap(MetadataExtractorProvider.StandardTagMapDefs);
             // add more custom mapping
 
             return new Metadata(extractor.Extract(filePath));
@@ -24,7 +24,7 @@ namespace ExifMetadata
         /// <summary>
         /// construct with empty mapping
         /// </summary>
-        public ExtractorMetadata()
+        public MetadataExtractorProvider()
         {
         }
 
