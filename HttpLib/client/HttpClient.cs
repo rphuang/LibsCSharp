@@ -107,7 +107,7 @@ namespace HttpLib
         /// gets available endpoints from the server
         /// </summary>
         /// <returns>returns a list of endpoints</returns>
-        public IList<HttpServiceEndpoint> DiscoverAvailableEndpoints(string path = string.Empty)
+        public IList<HttpServiceEndpoint> DiscoverAvailableEndpoints(string path = "")
         {
             HttpResponse response = GetResponse(path);
             if (response.Success)
