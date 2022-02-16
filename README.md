@@ -5,3 +5,5 @@ This repository contains following .NET C# libraries.
 * FormsLib - some utility classes and methods for Xamarin Forms
 * PlatformLib - for now, it defines a simple interface to get folder from platform (ex: Android)
 * SettingsLib - provides a simple text file based settings
+* HttpLib - This library provides simple utilities for client to send http request and for server to handle http request.
+* LogLib - simple logging utilities
